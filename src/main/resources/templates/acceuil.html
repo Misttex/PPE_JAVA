@@ -24,12 +24,31 @@
                 </li>
                 <li class="nav-item">
                     <form th:action="@{/logout}" method="post" >
-                        <button type="submit" value="Deconnectez-vous" class="btn btn-primary">Quitter !</button>
+                        <button type="submit" value="Deconnectez-vous" class="btn btn-primary" style="margin-left: 1200px">Quitter !</button>
                     </form>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+<div class="row g-2" style="margin-top: 30px;">
+    <div class="col-md">
+        <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInputGrid" placeholder="959AB">
+            <label for="floatingInputGrid">Saisir l'id de la fiche de frais</label>
+        </div>
+    </div>
+    <div class="col-md">
+        <div class="form-floating">
+            <select class="form-select" id="floatingSelectGrid" aria-label="Cliquer pour dérouler les actions">
+                <option value="1">Créer une fiche de frais</option>
+                <option value="2">Afficher fiche frais</option>
+                <option value="3">Modifier fiche frais</option>
+                <option value="4">Suivre fiche frais</option>
+            </select>
+            <label for="floatingSelectGrid">Selectioner l'action à effectuer</label>
+        </div>
+    </div>
+</div>
 </body>
 </html>

@@ -9,7 +9,7 @@ public class Connexion implements WebMvcConfigurer {
 
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/home").setViewName("home");
-        registry.addViewController("/").setViewName("acceuil");
+        registry.addViewController("/").setViewName("home");
         registry.addViewController("/acceuil").setViewName("acceuil");
         registry.addViewController("/login").setViewName("login");
         registry.addViewController("/fichefrais").setViewName("fichefrais");
